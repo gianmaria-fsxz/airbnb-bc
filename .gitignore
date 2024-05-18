@@ -1,2 +1,6 @@
 *.zip
 weroad-env
+*.csv
+*.pdf
+.ipynb_checkpoints/
+__pycache__/
