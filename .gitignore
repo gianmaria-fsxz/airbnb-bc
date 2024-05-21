@@ -1,9 +1,9 @@
 *.zip
 weroad-env
 bcenv
-*.csv
 *.pdf
 .ipynb_checkpoints/
 __pycache__/
 src/feast/airbnb/data
 *.parquet
+.vscode/
