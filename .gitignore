@@ -7,3 +7,4 @@ __pycache__/
 src/feast/airbnb/data
 *.parquet
 .vscode/
+mlruns/
