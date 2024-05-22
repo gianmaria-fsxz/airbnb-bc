@@ -1,41 +1,0 @@
-
-D
-$
-__dummy"
-__dummy_idJfeature_store
-°¨´²è‹Õ°¨´²è‹Õ
-o
-O
-airbnb_property_idThe ID of the property"airbnb_property_idJfeature_store
-°¨´²˜ƒÕ°¨´²˜ƒÕ1"$2aea8823-e528-4ae3-8dcf-a160c2df69e2*°¨´²è©±Õ2ä
-Ã
-df2_feature_viewfeature_storeairbnb_property_id"
-blocked_days"
-available_days"
-occupancy_rate"
-reservation_days2€£:›event_timestampZHF/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/data_df2.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢source2@b
-airbnb_property_id
-°¨´²°ò‘Õ°¨´²°ò‘Õ2ä
-Ã
-target_feature_viewfeature_storeairbnb_property_id"
-
-target2€£:Üevent_timestampZIG/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/target_df.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢G/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/target_df.parquet@b
-airbnb_property_id
-°¨´² úÕ°¨´² úÕ2Ã
-¢
-df1_feature_viewfeature_storeairbnb_property_id"
-listing_type"
-bedrooms"
-	bathrooms2€£:›event_timestampZHF/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/data_df1.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢source1@b
-airbnb_property_id
-°¨´²Øü¥Õ°¨´²Øü¥ÕRû
-¥
-,feast.infra.online_stores.sqlite.SqliteTable"u
-S/home/gianmaria/repos/airbnb-bc/src/feature_store/feature_repo/data/online_store.dbfeature_store_df1_feature_view
-¥
-,feast.infra.online_stores.sqlite.SqliteTable"u
-S/home/gianmaria/repos/airbnb-bc/src/feature_store/feature_repo/data/online_store.dbfeature_store_df2_feature_view
-¨
-,feast.infra.online_stores.sqlite.SqliteTable"x
-S/home/gianmaria/repos/airbnb-bc/src/feature_store/feature_repo/data/online_store.db!feature_store_target_feature_viewb±	Šfeast.data_source.PushSource¢source1_push_sourceªfeature_storeÒgevent_timestampZHF/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/data_df1.parquet¢source1b«event_timestampZHF/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/data_df1.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢source1ªfeature_storeb«event_timestampZHF/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/data_df2.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢source2ªfeature_storeb±	Šfeast.data_source.PushSource¢source2_push_sourceªfeature_storeÒgevent_timestampZHF/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/data_df2.parquet¢source2bìevent_timestampZIG/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/target_df.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢G/home/gianmaria/repos/airbnb-bc/src/feast/airbnb/data/target_df.parquetªfeature_storez5
-feature_store$aa06b953-8557-4de3-b4d5-ee9a97e0e4bb
