@@ -18,8 +18,6 @@ ABS_DATA_DIR = os.path.join(
 )
 
 
-# TODO config_yaml
-# INPUT_DATA_DIR =
 df = read_and_rename(os.path.join(ABS_DATA_DIR, CONFIG["INPUT_FILE"]))
 
 geo_columns = ["latitude", "longitude", "zipcode", "city"]
@@ -42,11 +40,25 @@ df["target"] = ~df["next_reporting_month"].isnull()
 df = df[df["reporting_month"] != "2023-10-01"].drop(["next_reporting_month"], axis=1)
 df["event_timestamp"] = pd.to_datetime(df["reporting_month"])
 
+
 data_df1 = df[["airbnb_property_id", "event_timestamp"] + ["bedrooms", "bathrooms"]]
 data_df2 = df[
     ["airbnb_property_id", "event_timestamp"]
-    + ["blocked_days", "available_days", "occupancy_rate", "reservation_days"]
+    + [
+        "cleaning_fee",
+        "blocked_days",
+        "available_days",
+        "occupancy_rate",
+        "reservation_days",
+        "adr_usd",
+        "number_of_reservation",
+        "revenue_usd",
+    ]
 ]
+
+data_df2.cleaning_fee.fillna(data_df2.cleaning_fee.mean(), inplace=True)
+
+
 data_df3 = df[["airbnb_property_id", "event_timestamp"] + geo_columns]
 data_df3 = get_num_neighbours(data_df3, GEO_ID="airbnb_property_id")
 data_df3 = get_dist_from_bc(data_df3, GEO_ID="airbnb_property_id")

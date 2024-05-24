@@ -2,7 +2,7 @@ from datetime import timedelta
 import os
 import yaml
 
-from feast import Entity, FeatureView, FileSource, Field, PushSource
+from feast import Entity, FeatureView, FileSource, Field
 from feast.types import Float32, Float64, Int32, Int64, String
 
 filename = os.path.abspath(__file__)
@@ -47,6 +47,7 @@ f_source2 = FileSource(
     timestamp_field=CONFIG["EVENT_TIMESTAMP"],
 )
 
+
 # Defining the second set of features
 df2_fv = FeatureView(
     name="df2_feature_view",
@@ -56,8 +57,11 @@ df2_fv = FeatureView(
         Field(name="blocked_days", dtype=Int32),
         Field(name="available_days", dtype=Int32),
         Field(name="occupancy_rate", dtype=Float32),
+        Field(name="cleaning_fee", dtype=Float32),
+        Field(name="number_of_reservation", dtype=Float32),
         Field(name="reservation_days", dtype=Int32),
-        # Field(name="adr_usd", dtype=Float32)
+        Field(name="adr_usd", dtype=Float32),
+        Field(name="revenue_usd", dtype=Int64),
     ],
     source=f_source2,
 )
