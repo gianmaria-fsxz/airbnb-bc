@@ -1,5 +1,8 @@
 INPUT_DATA_DIR: bc_data
+INPUT_FILE: JoshuaPerformanceData.csv
 OUT_DATA_DIR: feature_store/feature_repo/data
 DATA1: data_df1.parquet
 DATA2: data_df2.parquet
+DATA3: data_df3.parquet
 TARGETDF: target_df.parquet
+EVENT_TIMESTAMP: event_timestamp
