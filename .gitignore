@@ -5,6 +5,9 @@ bcenv
 .ipynb_checkpoints/
 __pycache__/
 src/feast/airbnb/data
+src/feature_store
 *.parquet
 .vscode/
+mlruns/
+mlartifacts/
 mlruns/

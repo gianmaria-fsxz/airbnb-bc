@@ -130,12 +130,12 @@ if __name__ == "__main__":
     log.info("training the model")
     import subprocess
 
-    subprocess.call("mlflow ui --host 0.0.0.0 --port 5000 --worker 1 &", shell=True)
+    subprocess.call("mlflow ui --host 0.0.0.0 --port 5000 --workers 1 &", shell=True)
 
     cv_model = create_model()
 
     # default url for local mlflow
-    mlflow.set_tracking_uri("http://127.0.0.1:8000")
+    mlflow.set_tracking_uri("http://127.0.0.1:5000")
 
     mlflow_trainer(
         cv_model,
