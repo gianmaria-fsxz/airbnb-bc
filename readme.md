@@ -50,12 +50,3 @@ python inference.py
 
 In order to check things on web browser (mlflow and feast ui), one could comment line 143 of `inference.py`
 I wrote that because on my laptop the two clients were struggling a little bit after running for a while
-
-### PS
-I did not focus on the quality of the analysis because the data did not have a lot of issues and so it could be possible to straightly go to a more machine learning engineer business case.
-The quality of the code is not so good because i preferred to use as more services as possibile in order to show the e2e.
-Lastly, the code runs in locall but it would be really easy to containerize or deploy to GCP using their services. 
-For example all the installation commands could be runned by cloud build anche the composer cluster would take care of new incoming data and so on.
-
-Thank you for your time, it was a pleasure!
-
